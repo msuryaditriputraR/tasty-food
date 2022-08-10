@@ -37,7 +37,7 @@
     --mb-6: 3rem;
 
     /* === Z index === */
-    --z-tooltipL: 10;
+    --z-tooltip: 10;
     --z-fixed: 100;
 }
 
@@ -199,4 +199,35 @@ img {
 /* === Change Background Header === */
 .scroll-header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+/* Scroll TOP */
+.scrolltop {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background-color: rgba(6, 156, 84, .5);
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    visibility: hidden;
+}
+
+.scrolltop:hover {
+    background-color: var(--first-color-alt);
+}
+
+.scrolltop__icon {
+    font-size: 1.8rem;
+    color: var(--body-color);
+}
+
+/* SHOW SCROLL */
+.show-scrolltop {
+    visibility: visible;
+    bottom: 1.5rem;
 }

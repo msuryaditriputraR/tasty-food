@@ -52,7 +52,17 @@ const scrollHeader = () => {
     header.classList[this.scrollY >= 200 ? "add" : "remove"]("scroll-header");
 };
 
+/* === SCROLL TOP === */
+const scrollToTop = () => {
+    const scrollTop = document.getElementById("scroll-top");
+
+    scrollTop.classList[this.scrollY >= 560 ? "add" : "remove"](
+        "show-scrolltop"
+    );
+};
+
 window.addEventListener("scroll", () => {
     activeLinkScroll();
     scrollHeader();
+    scrollToTop();
 });
