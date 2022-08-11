@@ -94,6 +94,24 @@ img {
     max-width: 100%;
 }
 
+/* === VARIABLES DARK THEME === */
+body.dark-theme {
+    --title-color: #F1F3F2;
+    --text-color: #C7D1CC;
+    --body-color: #1D2521;
+    --container-color: #27302C;
+}
+
+/* === BUTTON THEME TOGGLE === */
+.theme-toggle {
+    position: absolute;
+    right: 1rem;
+    top: 1.8rem;
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
 /* === CLASS CSS === */
 .section {
     padding: 4rem 0 2rem;
@@ -445,8 +463,8 @@ img {
     color: var(--first-color);
     text-decoration-line: underline;
     text-decoration-style: dashed;
-    text-decoration-color: var(--title-color);
-    text-underline-offset: .085rem;
+    text-decoration-color: var(--first-color);
+    text-underline-offset: .095rem;
 }
 
 .footer__copy-link:hover {
@@ -512,6 +530,11 @@ img {
 
     .nav__toggle {
         display: none;
+    }
+
+    .theme-toggle {
+        position: initial;
+        margin-left: var(--mb-2);
     }
 
     .home__container {
