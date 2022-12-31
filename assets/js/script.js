@@ -109,7 +109,7 @@ const scrollReveal = ScrollReveal({
     origin: "top",
     distance: "30px",
     duration: 2000,
-    reset: false,
+    reset: true,
 });
 
 scrollReveal.reveal(
